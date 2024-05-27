@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		412F2BCC2C03EFE900B36AE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412F2BCB2C03EFE900B36AE1 /* AppDelegate.swift */; };
+		412F2BCE2C03EFE900B36AE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412F2BCD2C03EFE900B36AE1 /* SceneDelegate.swift */; };
+		412F2BD32C03EFEA00B36AE1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 412F2BD22C03EFEA00B36AE1 /* Base */; };
+		412F2BD62C03EFEA00B36AE1 /* RandomColorsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 412F2BD42C03EFEA00B36AE1 /* RandomColorsApp.xcdatamodeld */; };
+		412F2BD82C03EFEC00B36AE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 412F2BD72C03EFEC00B36AE1 /* Assets.xcassets */; };
+		412F2BDB2C03EFEC00B36AE1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 412F2BDA2C03EFEC00B36AE1 /* Base */; };
+		412F2BE62C03EFEC00B36AE1 /* RandomColorsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412F2BE52C03EFEC00B36AE1 /* RandomColorsAppTests.swift */; };
+		412F2BF02C03EFEC00B36AE1 /* RandomColorsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412F2BEF2C03EFEC00B36AE1 /* RandomColorsAppUITests.swift */; };
+		412F2BF22C03EFEC00B36AE1 /* RandomColorsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412F2BF12C03EFEC00B36AE1 /* RandomColorsAppUITestsLaunchTests.swift */; };
+		412F2C012C03F44300B36AE1 /* ColorsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412F2C002C03F44300B36AE1 /* ColorsTableVC.swift */; };
+		412F2C032C03F6E800B36AE1 /* ColorsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412F2C022C03F6E800B36AE1 /* ColorsDetailVC.swift */; };
+		412F2C052C040D4600B36AE1 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412F2C042C040D4600B36AE1 /* UIColor+Ext.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		412F2BE22C03EFEC00B36AE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 412F2BC02C03EFE900B36AE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 412F2BC72C03EFE900B36AE1;
+			remoteInfo = RandomColorsApp;
+		};
+		412F2BEC2C03EFEC00B36AE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 412F2BC02C03EFE900B36AE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 412F2BC72C03EFE900B36AE1;
+			remoteInfo = RandomColorsApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		412F2BC82C03EFE900B36AE1 /* RandomColorsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomColorsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		412F2BCB2C03EFE900B36AE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		412F2BCD2C03EFE900B36AE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		412F2BD22C03EFEA00B36AE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		412F2BD52C03EFEA00B36AE1 /* RandomColorsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RandomColorsApp.xcdatamodel; sourceTree = "<group>"; };
+		412F2BD72C03EFEC00B36AE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		412F2BDA2C03EFEC00B36AE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		412F2BDC2C03EFEC00B36AE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		412F2BE12C03EFEC00B36AE1 /* RandomColorsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomColorsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		412F2BE52C03EFEC00B36AE1 /* RandomColorsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorsAppTests.swift; sourceTree = "<group>"; };
+		412F2BEB2C03EFEC00B36AE1 /* RandomColorsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomColorsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		412F2BEF2C03EFEC00B36AE1 /* RandomColorsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorsAppUITests.swift; sourceTree = "<group>"; };
+		412F2BF12C03EFEC00B36AE1 /* RandomColorsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		412F2C002C03F44300B36AE1 /* ColorsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTableVC.swift; sourceTree = "<group>"; };
+		412F2C022C03F6E800B36AE1 /* ColorsDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsDetailVC.swift; sourceTree = "<group>"; };
+		412F2C042C040D4600B36AE1 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		412F2C062C040EA000B36AE1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		412F2BC52C03EFE900B36AE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		412F2BDE2C03EFEC00B36AE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		412F2BE82C03EFEC00B36AE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		412F2BBF2C03EFE900B36AE1 = {
+			isa = PBXGroup;
+			children = (
+				412F2C062C040EA000B36AE1 /* README.md */,
+				412F2BCA2C03EFE900B36AE1 /* RandomColorsApp */,
+				412F2BE42C03EFEC00B36AE1 /* RandomColorsAppTests */,
+				412F2BEE2C03EFEC00B36AE1 /* RandomColorsAppUITests */,
+				412F2BC92C03EFE900B36AE1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		412F2BC92C03EFE900B36AE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				412F2BC82C03EFE900B36AE1 /* RandomColorsApp.app */,
+				412F2BE12C03EFEC00B36AE1 /* RandomColorsAppTests.xctest */,
+				412F2BEB2C03EFEC00B36AE1 /* RandomColorsAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		412F2BCA2C03EFE900B36AE1 /* RandomColorsApp */ = {
+			isa = PBXGroup;
+			children = (
+				412F2BCB2C03EFE900B36AE1 /* AppDelegate.swift */,
+				412F2BCD2C03EFE900B36AE1 /* SceneDelegate.swift */,
+				412F2BD12C03EFEA00B36AE1 /* Main.storyboard */,
+				412F2BD72C03EFEC00B36AE1 /* Assets.xcassets */,
+				412F2BD92C03EFEC00B36AE1 /* LaunchScreen.storyboard */,
+				412F2BDC2C03EFEC00B36AE1 /* Info.plist */,
+				412F2BD42C03EFEA00B36AE1 /* RandomColorsApp.xcdatamodeld */,
+				412F2C002C03F44300B36AE1 /* ColorsTableVC.swift */,
+				412F2C022C03F6E800B36AE1 /* ColorsDetailVC.swift */,
+				412F2C042C040D4600B36AE1 /* UIColor+Ext.swift */,
+			);
+			path = RandomColorsApp;
+			sourceTree = "<group>";
+		};
+		412F2BE42C03EFEC00B36AE1 /* RandomColorsAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				412F2BE52C03EFEC00B36AE1 /* RandomColorsAppTests.swift */,
+			);
+			path = RandomColorsAppTests;
+			sourceTree = "<group>";
+		};
+		412F2BEE2C03EFEC00B36AE1 /* RandomColorsAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				412F2BEF2C03EFEC00B36AE1 /* RandomColorsAppUITests.swift */,
+				412F2BF12C03EFEC00B36AE1 /* RandomColorsAppUITestsLaunchTests.swift */,
+			);
+			path = RandomColorsAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		412F2BC72C03EFE900B36AE1 /* RandomColorsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 412F2BF52C03EFEC00B36AE1 /* Build configuration list for PBXNativeTarget "RandomColorsApp" */;
+			buildPhases = (
+				412F2BC42C03EFE900B36AE1 /* Sources */,
+				412F2BC52C03EFE900B36AE1 /* Frameworks */,
+				412F2BC62C03EFE900B36AE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RandomColorsApp;
+			productName = RandomColorsApp;
+			productReference = 412F2BC82C03EFE900B36AE1 /* RandomColorsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		412F2BE02C03EFEC00B36AE1 /* RandomColorsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 412F2BF82C03EFEC00B36AE1 /* Build configuration list for PBXNativeTarget "RandomColorsAppTests" */;
+			buildPhases = (
+				412F2BDD2C03EFEC00B36AE1 /* Sources */,
+				412F2BDE2C03EFEC00B36AE1 /* Frameworks */,
+				412F2BDF2C03EFEC00B36AE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				412F2BE32C03EFEC00B36AE1 /* PBXTargetDependency */,
+			);
+			name = RandomColorsAppTests;
+			productName = RandomColorsAppTests;
+			productReference = 412F2BE12C03EFEC00B36AE1 /* RandomColorsAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		412F2BEA2C03EFEC00B36AE1 /* RandomColorsAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 412F2BFB2C03EFEC00B36AE1 /* Build configuration list for PBXNativeTarget "RandomColorsAppUITests" */;
+			buildPhases = (
+				412F2BE72C03EFEC00B36AE1 /* Sources */,
+				412F2BE82C03EFEC00B36AE1 /* Frameworks */,
+				412F2BE92C03EFEC00B36AE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				412F2BED2C03EFEC00B36AE1 /* PBXTargetDependency */,
+			);
+			name = RandomColorsAppUITests;
+			productName = RandomColorsAppUITests;
+			productReference = 412F2BEB2C03EFEC00B36AE1 /* RandomColorsAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		412F2BC02C03EFE900B36AE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					412F2BC72C03EFE900B36AE1 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					412F2BE02C03EFEC00B36AE1 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 412F2BC72C03EFE900B36AE1;
+					};
+					412F2BEA2C03EFEC00B36AE1 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 412F2BC72C03EFE900B36AE1;
+					};
+				};
+			};
+			buildConfigurationList = 412F2BC32C03EFE900B36AE1 /* Build configuration list for PBXProject "RandomColorsApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 412F2BBF2C03EFE900B36AE1;
+			productRefGroup = 412F2BC92C03EFE900B36AE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				412F2BC72C03EFE900B36AE1 /* RandomColorsApp */,
+				412F2BE02C03EFEC00B36AE1 /* RandomColorsAppTests */,
+				412F2BEA2C03EFEC00B36AE1 /* RandomColorsAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		412F2BC62C03EFE900B36AE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				412F2BD82C03EFEC00B36AE1 /* Assets.xcassets in Resources */,
+				412F2BDB2C03EFEC00B36AE1 /* Base in Resources */,
+				412F2BD32C03EFEA00B36AE1 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		412F2BDF2C03EFEC00B36AE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		412F2BE92C03EFEC00B36AE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		412F2BC42C03EFE900B36AE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				412F2BD62C03EFEA00B36AE1 /* RandomColorsApp.xcdatamodeld in Sources */,
+				412F2C032C03F6E800B36AE1 /* ColorsDetailVC.swift in Sources */,
+				412F2C012C03F44300B36AE1 /* ColorsTableVC.swift in Sources */,
+				412F2C052C040D4600B36AE1 /* UIColor+Ext.swift in Sources */,
+				412F2BCC2C03EFE900B36AE1 /* AppDelegate.swift in Sources */,
+				412F2BCE2C03EFE900B36AE1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		412F2BDD2C03EFEC00B36AE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				412F2BE62C03EFEC00B36AE1 /* RandomColorsAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		412F2BE72C03EFEC00B36AE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				412F2BF02C03EFEC00B36AE1 /* RandomColorsAppUITests.swift in Sources */,
+				412F2BF22C03EFEC00B36AE1 /* RandomColorsAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		412F2BE32C03EFEC00B36AE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 412F2BC72C03EFE900B36AE1 /* RandomColorsApp */;
+			targetProxy = 412F2BE22C03EFEC00B36AE1 /* PBXContainerItemProxy */;
+		};
+		412F2BED2C03EFEC00B36AE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 412F2BC72C03EFE900B36AE1 /* RandomColorsApp */;
+			targetProxy = 412F2BEC2C03EFEC00B36AE1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		412F2BD12C03EFEA00B36AE1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				412F2BD22C03EFEA00B36AE1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		412F2BD92C03EFEC00B36AE1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				412F2BDA2C03EFEC00B36AE1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		412F2BF32C03EFEC00B36AE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		412F2BF42C03EFEC00B36AE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		412F2BF62C03EFEC00B36AE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G822BFNQ5B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RandomColorsApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyleho.RandomColorsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		412F2BF72C03EFEC00B36AE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G822BFNQ5B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RandomColorsApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyleho.RandomColorsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		412F2BF92C03EFEC00B36AE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G822BFNQ5B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyleho.RandomColorsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RandomColorsApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RandomColorsApp";
+			};
+			name = Debug;
+		};
+		412F2BFA2C03EFEC00B36AE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G822BFNQ5B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyleho.RandomColorsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RandomColorsApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RandomColorsApp";
+			};
+			name = Release;
+		};
+		412F2BFC2C03EFEC00B36AE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G822BFNQ5B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyleho.RandomColorsAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RandomColorsApp;
+			};
+			name = Debug;
+		};
+		412F2BFD2C03EFEC00B36AE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G822BFNQ5B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyleho.RandomColorsAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RandomColorsApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		412F2BC32C03EFE900B36AE1 /* Build configuration list for PBXProject "RandomColorsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				412F2BF32C03EFEC00B36AE1 /* Debug */,
+				412F2BF42C03EFEC00B36AE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		412F2BF52C03EFEC00B36AE1 /* Build configuration list for PBXNativeTarget "RandomColorsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				412F2BF62C03EFEC00B36AE1 /* Debug */,
+				412F2BF72C03EFEC00B36AE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		412F2BF82C03EFEC00B36AE1 /* Build configuration list for PBXNativeTarget "RandomColorsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				412F2BF92C03EFEC00B36AE1 /* Debug */,
+				412F2BFA2C03EFEC00B36AE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		412F2BFB2C03EFEC00B36AE1 /* Build configuration list for PBXNativeTarget "RandomColorsAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				412F2BFC2C03EFEC00B36AE1 /* Debug */,
+				412F2BFD2C03EFEC00B36AE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		412F2BD42C03EFEA00B36AE1 /* RandomColorsApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				412F2BD52C03EFEA00B36AE1 /* RandomColorsApp.xcdatamodel */,
+			);
+			currentVersion = 412F2BD52C03EFEA00B36AE1 /* RandomColorsApp.xcdatamodel */;
+			path = RandomColorsApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 412F2BC02C03EFE900B36AE1 /* Project object */;
+}
